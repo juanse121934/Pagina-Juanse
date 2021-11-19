@@ -23,7 +23,7 @@ document.querySelectorAll(".hamburguer")[0].addEventListener("click", function()
         document.querySelectorAll(".hamburguer")[0].style.color ="#fff";
         semaforo= false;
     }else{
-        document.querySelectorAll(".hamburguer")[0].style.color ="#000";
+        document.querySelectorAll(".hamburguer")[0].style.color ="#8d01ff";
         semaforo= true;
     }
 

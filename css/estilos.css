@@ -846,102 +846,40 @@ footer {
     font-weight: bold;
 }
 
-
 /* Breakpoints responsive */
 
-@media screen and (max-width:800px) {
-    .titulo {
-        font-size: 45px;
-    }
-    .contenido-header {
-        flex-direction: column;
-        justify-content: space-evenly;
-        height: 720px;
-    }
-    .contenido-header>img {
-        width: 400px;
-    }
-    .textos-header {
-        margin: 0;
-    }
-    /* About us */
-    .articulo {
-        width: 45%;
-    }
-    /* Questions */
-    .questions {
-        height: 720px;
-        justify-content: space-evenly;
-        flex-direction: column;
-    }
-    .questions>img {
-        width: 400px;
-    }
-    /* results */
-    .conten-results {
-        flex-direction: column-reverse;
-    }
-    .results-text>a {
-        margin-bottom: 60px;
-    }
-    .numbers {
-        width: 100%;
-        /* justify-content: space-between; */
-    }
-    .results-text {
-        width: 100%;
-    }
-    /* Services */
-    .services {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    .box-skills {
-        margin: 0 0 40px 0;
-    }
-    .box-skills h4 {
-        width: 500px;
-    }
-    .services>img {
-        width: 400px;
-    }
-    /* Footer */
-    footer {
-        justify-content: space-evenly;
-    }
-    .partFooter {
-        width: 40%;
-        margin-bottom: 40px;
-    }
-}
+@media screen and (max-width:600px)  {
 
-@media screen and (max-width:600px) {
-    .titulo {
-        font-size: 35px;
+    .hamburguer{
+        display: block;
     }
-    h1 {
-        font-size: 40px;
+    .hamburguer{
+        top: 50px;
+        left: 10px;
+        position: absolute;
+        color: #8d01ff;
     }
-    .contenido-header {
-        height: 650px;
+    nav .logo h1 {
+       display: inline-block;
+       margin-left: 140px;
+        font-size: 20px;
     }
+   
     .nav {
         padding: 0 10px;
     }
-    .contenido-header>img {
-        width: 200px;
-    }
+ 
     .enlaces-header {
         position: fixed;
         background: #667db6;
         /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+        background: -webkit-linear-gradient(to right, #000000, #8d01ff, #a000c8, #b666af);
         /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+        background: linear-gradient(to right, #000000, #8d01ff, #a000c8, #b666af);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         top: 0;
         right: 0;
-        width: 100%;
+        width: 150%;
         height: 100vh;
         display: flex;
         align-items: center;
@@ -954,36 +892,1137 @@ footer {
         clip-path: circle(150% at 100% 0);
     }
     .nav .enlaces-header a {
-        color: #fff;
+        color: rgb(0, 0, 0);
     }
-    .hamburguer {
-        display: block;
-    }
-    /* About us */
-    .articulo {
-        width: 95%;
-    }
-    /* Questions */
-    .questions>img {
-        width: 200px;
-    }
-    /* results */
-    .numbers .number {
-        width: 95%;
-    }
-    .results-text h4 {
-        font-size: 35px;
-    }
-    /* Services */
-    .services>img {
-        width: 200px;
-    }
-    .box-skills h4 {
+  
+    .seguridad{
         width: 100%;
+        height: 350px;
+        margin-left: -240px;
+       
     }
-    /* Footer */
+    
+    .seguridad>h3{
+        display: inline-block;
+        
+        padding-top: 140px;
+        padding-left: 300px;
+        font-size: 20px;
+        font-weight: 500;
+     
+        
+    }
+
+    .seguridad>h4{
+        display: inline-block;
+
+        font-size: 20px;
+        padding-left:300px;
+        font-weight: 500;
+        color: #ffffff;
+        text-shadow: 0px 0px 10px #7e3bb4;
+        animation: ease-in-out animat 2s;
+        
+    }
+    @keyframes animat {
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    .seguridad>a{
+        margin-left: 300px;
+        width: 100px;
+        display: inline-block;
+        background: #925ebd;
+        text-align: center;
+        color: #fff;
+        padding: 12px 0;
+        text-decoration: none;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 14px;
+        border-radius: 5px;
+        box-shadow: 0 8px 32px #925ebd;
+        animation: ease-in-out animat 2s;
+      
+    }
+    @keyframes animat {
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    .contenido-header {
+    
+        width: 100%;
+        height: 600px;
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+      
+    }
+    
+    .carruseria {
+    
+        display: none;
+       
+        
+    }
+  
+    
+    .about-us>h5{
+
+        display: inline-block;
+        font-size: 15px;
+        text-align: center;
+        font-weight: 400;
+        text-shadow: 0 0px 5px rgb(0, 0, 0);
+        color: #ffffffc5;
+        text-shadow: 0px 0px 10px rgb(68, 0, 255);
+    
+    }
+
+    .about-us b{
+        display: inline-block;
+        color:#925ebd;
+       
+    }
+    
+    .profesionales{
+        display: inline-block;
+        margin-top: -5px;
+        height: 1100px;
+        background:url(../img/circuitoblanco.png)center/cover;
+        padding-top: 120px;
+      
+       
+          
+    } 
+
+    .perfiles{
+
+        display: inline-block;
+        padding-top: 60px;
+        padding-left: 260px;
+        margin-left: -230px;
+      
+    }
+    
+    .perfil{
+
+    display: inline-block;
+    padding: 2px;
+    text-align: center;
+    width: 90%;
+    height: 550px;
+    border-radius: 10px;
+    background:linear-gradient(to top right, #000000, #7540a1,#000000, #000000, #000000,#000000, #7540a1, #000000);
+    box-shadow: 0px 0px 50px rgb(111, 0, 255);
+    animation: ease-in animar 3s;
+
+    }
+    
+    @keyframes animar{
+        0%{
+            transform: scale(.3);
+            border-radius: 100%;
+        }
+    }
+    
+    .perfil h1{
+
+        padding-top:  40px; 
+        padding-left: 30px;
+        padding-bottom: 30px;
+        font-size: 15px;
+        font-weight: 600;
+        text-shadow: 0px 0px 20px rgb(68, 0, 255);
+    }
+
+    .perfil hr{
+
+        margin: -10px 30px 0px 30px;
+
+    }
+
+    .perfil p{
+      
+        font-size: 15px;
+        text-align: justify;
+        color: rgb(255, 255, 255);
+        text-shadow: 0px 0px 1px rgb(47, 0, 255);
+        margin: 25px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .perfil b{
+        color:#9677af;
+    }
+    .perfiles img{
+        display: none;
+ 
+    }
+    /*link de profesional*/
+  
+
+    .profesionaless{
+
+        margin-top: -5px;
+        height: 1000px;
+        background:url(../img/circuitoblanco.png)center/cover;
+        
+    } 
+
+    .profesionaless>h2{
+        color: #000000;
+        padding-top: 40px;
+        text-align: center;
+        font-size: 15px;
+        font-family: Bodoni MT Poster Compressed;
+        text-shadow: 0px 0px 3px rgb(111, 0, 255);
+        animation: ease-in-out animates 4s;
+      
+    }
+    @keyframes animates {
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    .profesionaless>h3{
+        color: #000000;
+        text-align: center;
+        font-size: 15px;
+        font-family: Bodoni MT Poster Compressed;
+        text-shadow: 0px 0px 3px rgb(111, 0, 255);
+        animation: ease-in-out animates 4s;
+      
+    }
+    @keyframes animates {
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    
+    }
+    
+    
+    .perfill{
+        margin-left: 100px;
+        text-align: center;
+        width: 60%;
+        height: 12px;
+        border-radius: 10px;
+        background: linear-gradient(to top right, #000000e0, #8d01ff,#000000, #000000, #000000,#000000, #8d01ff, #000000e0);
+        box-shadow: 0px 0px 10px rgb(111, 0, 255);
+        animation: ease-out animars 3s;
+        
+        }
+    
+    @keyframes animars{
+        0%{
+          width: 0;
+        }
+        100%{
+            width: 60%;
+        }
+    }
+    .perfil1{
+        margin-left: 100px;
+        text-align: center;
+        width: 60%;
+        height: 12px;
+        border-radius: 10px;
+        background: linear-gradient(to top right, #000000e0, #8d01ff,#000000, #000000, #000000,#000000, #8d01ff, #000000e0);
+        box-shadow: 0px 0px 10px rgb(111, 0, 255);
+        animation: ease-out animars1 4s;
+        
+    }
+    
+    @keyframes animars1{
+        0%{
+          width: 0;
+        }
+        100%{
+            width: 60%;
+        }
+    }
+    .perfil2{
+        margin-left: 100px;
+        text-align: center;
+        width: 60%;
+        height: 12px;
+        border-radius: 10px;
+        background: linear-gradient(to top right, #000000e0, #8d01ff,#000000, #000000, #000000,#000000, #8d01ff, #000000e0);
+        box-shadow: 0px 0px 10px rgb(111, 0, 255);
+        animation: ease-out animars1 5s;
+        
+    }
+    
+    @keyframes animars1{
+        0%{
+          width: 0;
+        }
+        100%{
+            width: 60%;
+        }
+    }
+    .perfil3{
+        margin-left: 100px;
+        text-align: center;
+        width: 55%;
+        height: 12px;
+        border-radius: 10px;
+        background: linear-gradient(to top right, #000000e0, #8d01ff,#000000, #000000, #000000,#000000, #8d01ff, #000000e0);
+        box-shadow: 0px 0px 10px rgb(111, 0, 255);
+        animation: ease-out animars2 6s;
+        
+    }
+    
+    @keyframes animars2{
+        0%{
+          width: 0;
+        }
+        100%{
+            width: 55%;
+        }
+    }
+    .perfil4{
+        margin-left: 100px;
+        text-align: center;
+        width: 60%;
+        height: 12px;
+        border-radius: 10px;
+        background: linear-gradient(to top right, #000000e0, #8d01ff,#000000, #000000, #000000,#000000, #8d01ff, #000000e0);
+        box-shadow: 0px 0px 10px rgb(111, 0, 255);
+        animation: ease-out animars1 7s;
+        
+    }
+    
+    @keyframes animars1{
+        0%{
+          width: 0;
+        }
+        100%{
+            width: 60%;
+        }
+    }
+    .perfil5{
+        margin-left: 100px;
+        text-align: center;
+        width: 55%;
+        height: 12px;
+        border-radius: 10px;
+        background: linear-gradient(to top right, #000000e0, #8d01ff,#000000, #000000, #000000,#000000, #8d01ff, #000000e0);
+        box-shadow: 0px 0px 10px rgb(111, 0, 255);
+        animation: ease-out animars3 8s;
+        
+    }
+    
+    @keyframes animars3{
+        0%{
+          width: 0;
+        }
+        100%{
+            width: 55%;
+        }
+    }
+    .perfil6{
+        margin-left: 100px;
+        text-align: center;
+        width: 60%;
+        height: 12px;
+        border-radius: 10px;
+        background: linear-gradient(to top right, #000000e0, #8d01ff,#000000, #000000, #000000,#000000, #8d01ff, #000000e0);
+        box-shadow: 0px 0px 10px rgb(111, 0, 255);
+        animation: ease-out animars1 9s;
+        
+    }
+    
+    @keyframes animars1{
+        0%{
+          width: 0;
+        }
+        100%{
+            width: 60%;
+        }
+    }
+    .perfil7{
+        margin-left: 100px;
+        text-align: center;
+        width: 60%;
+        height: 12px;
+        border-radius: 10px;
+        background: linear-gradient(to top right, #000000e0, #8d01ff,#000000, #000000, #000000,#000000, #8d01ff, #000000e0);
+        box-shadow: 0px 0px 10px rgb(111, 0, 255);
+        animation: ease-out animars1 10s;
+        
+    }
+    
+    @keyframes animars1{
+        0%{
+          width: 0;
+        }
+        100%{
+            width: 60%;
+        }
+    }
+    
+    .perfiless>h4{
+        color: #000000;
+        margin-top: -13px;
+       margin-left: 20px;
+       width: 93%;
+       box-shadow: 0px 0px 10px rgb(25, 0, 255);
+       text-shadow:0px 0px 1px rgb(0, 140, 255);
+       font-size: 12px;
+    }
+    .perfiless>h5{
+        font-size: 12px;
+        color: #000000;
+        margin-top: -13px;
+       margin-left: 330px;
+       text-shadow:0px 0px 1px rgb(0, 140, 255);
+       animation: ease-in-out animate 6s;
+      
+    }
+    @keyframes animate {
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    .perfil5>h5{
+        font-size: 12px;
+        color: #000000;
+        margin-left: 230px;
+        text-shadow:0px 0px 1px rgb(0, 140, 255);
+        animation: ease-in-out animate 6s;
+      
+    }
+    @keyframes animate {
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    .perfil3>h5{
+
+        font-size: 12px;
+        color: #000000;
+        margin-left: 230px;
+        text-shadow:0px 0px 1px rgb(0, 140, 255);
+        animation: ease-in-out animate 6s;
+      
+    }
+    @keyframes animate {
+
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }  
+
+    /* footer */
+    
+    footer {
+        background:url(../img/circuitonegro1.png)center/cover;
+        padding: 20px 20px 20px;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        font-family: 'Roboto', sans-serif;
+        height: 700px;
+       
+        
+         
+        
+    }
+    
     .partFooter {
-        width: 95%;
-        margin-bottom: 40px;
+        display:inline-block;
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+        margin-top: 35px;
+        
+       
     }
+    .partFooter h1{
+        font-size: 22px;
+    }
+
+    
+    
+    .partFooter h5 {
+        display: inline-block;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 400;
+        text-shadow:0px 0px 10px rgb(0, 181, 253); 
+        box-shadow:3px 3px 3px rgb(149, 183, 255);
+        border-radius: 5px;
+    
+      
+      
+        
+    }
+    
+    .partFooter h4 {
+        display: inline-block;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 30px;
+        margin-left: 50px;
+        text-shadow:0px 0px 10px rgb(0, 181, 253); 
+        box-shadow:3px 3px 3px rgb(149, 183, 255);
+        border-radius: 5px;
+      
+        
+    }
+    
+    .partFooter a {
+        display:inline-block;
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 300;
+        transition: color .3s ease-in-out;
+       
+       
+    }
+  
+    
+    .social-media i {
+        display: inline-block;
+        font-size: 15px;
+        display: inline-block;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+        width: 38px;
+        height: 38px;
+        line-height: 36px;
+        cursor: pointer;
+        margin-top: 20px;
+        text-align: center;
+        transition: all ease-in-out .3s;
+        margin-right: 5px;
+    } 
+     
 }
+
+
+@media screen and (max-width:800px)  {
+
+    .hamburguer{
+        display: block;
+     
+    }
+    .hamburguer{
+       
+        top: 20px;
+        left: 50px;
+        position: absolute;
+        color: #8d01ff;
+    }
+    nav .logo h1 {
+       display: inline-block;
+       margin-left: 280px;
+        font-size: 30px;
+    }
+   
+    .nav {
+        padding: 0 10px;
+    }
+ 
+    .enlaces-header {
+        position: fixed;
+        background: #667db6;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #000000, #8d01ff, #a000c8, #b666af);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #000000, #8d01ff, #a000c8, #b666af);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        top: 0;
+        right: 0;
+        width: 150%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        clip-path: circle(0.0% at 100% 0);
+    }
+    .nav .menudos {
+        -webkit-clip-path: circle(150% at 100% 0);
+        clip-path: circle(150% at 100% 0);
+    }
+    .nav .enlaces-header a {
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+      margin-left: 150px;
+    }
+  
+    .seguridad{
+        width: 100%;
+        height: 350px;
+        margin-left: -240px;
+       
+    }
+    
+    .seguridad>h3{
+        display: inline-block;
+        
+        padding-top: 140px;
+        padding-left: 420px;
+        font-size: 30px;
+        font-weight: 500;
+     
+        
+    }
+
+    .seguridad>h4{
+        display: inline-block;
+
+        font-size: 30px;
+        padding-left:420px;
+        font-weight: 500;
+        color: #ffffff;
+        text-shadow: 0px 0px 10px #7e3bb4;
+        animation: ease-in-out animat 2s;
+        
+    }
+    @keyframes animat {
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    .seguridad>a{
+        margin-left: 420px;
+        width: 200px;
+        display: inline-block;
+        background: #925ebd;
+        text-align: center;
+        color: #fff;
+        padding: 12px 0;
+        text-decoration: none;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 26px;
+        border-radius: 5px;
+        box-shadow: 0 8px 32px #925ebd;
+        animation: ease-in-out animat 2s;
+      
+    }
+    @keyframes animat {
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    .contenido-header {
+    
+        width: 100%;
+        height: 600px;
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+      
+    }
+    
+    .carruseria {
+    
+        display: none;
+       
+        
+    }
+  
+    
+    .about-us>h5{
+
+        display: inline-block;
+        font-size: 25px;
+        text-align: center;
+        font-weight: 400;
+        text-shadow: 0 0px 5px rgb(0, 0, 0);
+        color: #ffffffc5;
+        text-shadow: 0px 0px 10px rgb(68, 0, 255);
+    
+    }
+
+    .about-us b{
+        display: inline-block;
+        color:#925ebd;
+       
+    }
+    
+    .profesionales{
+        display: inline-block;
+        margin-top: -5px;
+        height: 1100px;
+        background:url(../img/circuitoblanco.png)center/cover;
+        padding-top: 120px;
+      
+       
+          
+    } 
+
+    .perfiles{
+
+        display: inline-block;
+        padding-top: 60px;
+        padding-left: 260px;
+        margin-left: -230px;
+      
+    }
+    
+    .perfil{
+
+    display: inline-block;
+    padding: 2px;
+    text-align: center;
+    width: 90%;
+    height: 600px;
+    border-radius: 10px;
+    background:linear-gradient(to top right, #000000, #7540a1,#000000, #000000, #000000,#000000, #7540a1, #000000);
+    box-shadow: 0px 0px 50px rgb(111, 0, 255);
+    animation: ease-in animar 3s;
+
+    }
+    
+    @keyframes animar{
+        0%{
+            transform: scale(.3);
+            border-radius: 100%;
+        }
+    }
+    
+    .perfil h1{
+
+        padding-top:  40px; 
+        padding-left: 30px;
+        padding-bottom: 30px;
+        font-size: 25px;
+        font-weight: 600;
+        text-shadow: 0px 0px 20px rgb(68, 0, 255);
+    }
+
+    .perfil hr{
+
+        margin: -10px 30px 0px 30px;
+
+    }
+
+    .perfil p{
+      
+        font-size: 25px;
+        text-align: justify;
+        color: rgb(255, 255, 255);
+        text-shadow: 0px 0px 1px rgb(47, 0, 255);
+        margin: 25px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .perfil b{
+        color:#9677af;
+    }
+    .perfiles img{
+        display: none;
+ 
+    }
+    /*link de profesional*/
+  
+
+    .profesionaless{
+
+        margin-top: -5px;
+        height: 1000px;
+        background:url(../img/circuitoblanco.png)center/cover;
+        
+    } 
+
+    .profesionaless>h2{
+        color: #000000;
+        padding-top: 40px;
+        text-align: center;
+        font-size: 25px;
+        font-family: Bodoni MT Poster Compressed;
+        text-shadow: 0px 0px 3px rgb(111, 0, 255);
+        animation: ease-in-out animates 4s;
+      
+    }
+    @keyframes animates {
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    .profesionaless>h3{
+        color: #000000;
+        text-align: center;
+        font-size: 25px;
+        font-family: Bodoni MT Poster Compressed;
+        text-shadow: 0px 0px 3px rgb(111, 0, 255);
+        animation: ease-in-out animates 4s;
+      
+    }
+    @keyframes animates {
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    
+    }
+    
+    
+    .perfill{
+        margin-left: 200px;
+        text-align: center;
+        width: 60%;
+        height: 22px;
+        border-radius: 10px;
+        background: linear-gradient(to top right, #000000e0, #8d01ff,#000000, #000000, #000000,#000000, #8d01ff, #000000e0);
+        box-shadow: 0px 0px 10px rgb(111, 0, 255);
+        animation: ease-out animars 3s;
+        
+        }
+    
+    @keyframes animars{
+        0%{
+          width: 0;
+        }
+        100%{
+            width: 60%;
+        }
+    }
+    .perfil1{
+        margin-left: 200px;
+        text-align: center;
+        width: 60%;
+        height: 22px;
+        border-radius: 10px;
+        background: linear-gradient(to top right, #000000e0, #8d01ff,#000000, #000000, #000000,#000000, #8d01ff, #000000e0);
+        box-shadow: 0px 0px 10px rgb(111, 0, 255);
+        animation: ease-out animars1 4s;
+        
+    }
+    
+    @keyframes animars1{
+        0%{
+          width: 0;
+        }
+        100%{
+            width: 60%;
+        }
+    }
+    .perfil2{
+        margin-left: 200px;
+        text-align: center;
+        width: 60%;
+        height: 22px;
+        border-radius: 10px;
+        background: linear-gradient(to top right, #000000e0, #8d01ff,#000000, #000000, #000000,#000000, #8d01ff, #000000e0);
+        box-shadow: 0px 0px 10px rgb(111, 0, 255);
+        animation: ease-out animars1 5s;
+        
+    }
+    
+    @keyframes animars1{
+        0%{
+          width: 0;
+        }
+        100%{
+            width: 60%;
+        }
+    }
+    .perfil3{
+        margin-left: 200px;
+        text-align: center;
+        width: 55%;
+        height: 22px;
+        border-radius: 10px;
+        background: linear-gradient(to top right, #000000e0, #8d01ff,#000000, #000000, #000000,#000000, #8d01ff, #000000e0);
+        box-shadow: 0px 0px 10px rgb(111, 0, 255);
+        animation: ease-out animars2 6s;
+        
+    }
+    
+    @keyframes animars2{
+        0%{
+          width: 0;
+        }
+        100%{
+            width: 55%;
+        }
+    }
+    .perfil4{
+        margin-left: 200px;
+        text-align: center;
+        width: 60%;
+        height: 22px;
+        border-radius: 10px;
+        background: linear-gradient(to top right, #000000e0, #8d01ff,#000000, #000000, #000000,#000000, #8d01ff, #000000e0);
+        box-shadow: 0px 0px 10px rgb(111, 0, 255);
+        animation: ease-out animars1 7s;
+        
+    }
+    
+    @keyframes animars1{
+        0%{
+          width: 0;
+        }
+        100%{
+            width: 60%;
+        }
+    }
+    .perfil5{
+        margin-left: 200px;
+        text-align: center;
+        width: 55%;
+        height: 22px;
+        border-radius: 10px;
+        background: linear-gradient(to top right, #000000e0, #8d01ff,#000000, #000000, #000000,#000000, #8d01ff, #000000e0);
+        box-shadow: 0px 0px 10px rgb(111, 0, 255);
+        animation: ease-out animars3 8s;
+        
+    }
+    
+    @keyframes animars3{
+        0%{
+          width: 0;
+        }
+        100%{
+            width: 55%;
+        }
+    }
+    .perfil6{
+        margin-left: 200px;
+        text-align: center;
+        width: 60%;
+        height: 22px;
+        border-radius: 10px;
+        background: linear-gradient(to top right, #000000e0, #8d01ff,#000000, #000000, #000000,#000000, #8d01ff, #000000e0);
+        box-shadow: 0px 0px 10px rgb(111, 0, 255);
+        animation: ease-out animars1 9s;
+        
+    }
+    
+    @keyframes animars1{
+        0%{
+          width: 0;
+        }
+        100%{
+            width: 60%;
+        }
+    }
+    .perfil7{
+        margin-left: 200px;
+        text-align: center;
+        width: 60%;
+        height: 22px;
+        border-radius: 10px;
+        background: linear-gradient(to top right, #000000e0, #8d01ff,#000000, #000000, #000000,#000000, #8d01ff, #000000e0);
+        box-shadow: 0px 0px 10px rgb(111, 0, 255);
+        animation: ease-out animars1 10s;
+        
+    }
+    
+    @keyframes animars1{
+        0%{
+          width: 0;
+        }
+        100%{
+            width: 60%;
+        }
+    }
+    
+    .perfiless>h4{
+        color: #000000;
+        margin-top: -23px;
+       margin-left: 18px;
+       width: 93%;
+       box-shadow: 0px 0px 10px rgb(25, 0, 255);
+       text-shadow:0px 0px 1px rgb(0, 140, 255);
+       font-size: 22px;
+    }
+    .perfiless>h5{
+        font-size: 22px;
+        color: #000000;
+        margin-top: -23px;
+       margin-left: 700px;
+       text-shadow:0px 0px 1px rgb(0, 140, 255);
+       animation: ease-in-out animate 6s;
+      
+    }
+    @keyframes animate {
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    .perfil5>h5{
+        font-size: 22px;
+        color: #000000;
+        margin-left: 500px;
+        text-shadow:0px 0px 1px rgb(0, 140, 255);
+        animation: ease-in-out animate 6s;
+      
+    }
+    @keyframes animate {
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    .perfil3>h5{
+
+        font-size: 22px;
+        color: #000000;
+        margin-left: 500px;
+        text-shadow:0px 0px 1px rgb(0, 140, 255);
+        animation: ease-in-out animate 6s;
+      
+    }
+    @keyframes animate {
+
+        0% {
+            transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }  
+
+    /* footer */
+    
+    footer {
+        background:url(../img/circuitonegro1.png)center/cover;
+        padding: 20px 20px 20px;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        font-family: 'Roboto', sans-serif;
+        height: 800px;
+       
+        
+         
+        
+    }
+    
+    .partFooter {
+        display:inline-block;
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+        margin-top: 35px;
+        
+       
+    }
+    .partFooter h1{
+        font-size: 32px;
+    }
+
+    
+    
+    .partFooter h5 {
+      
+      
+        color: #ffffff;
+        font-size: 25px;
+        font-weight: 400;
+        text-shadow:0px 0px 10px rgb(0, 181, 253); 
+        box-shadow:3px 3px 3px rgb(149, 183, 255);
+        border-radius: 5px;
+    
+      
+      
+        
+    }
+    
+    .partFooter h4 {
+        display: inline-block;
+        color: #ffffff;
+        font-size: 25px;
+        font-weight: 400;
+        margin-bottom: 30px;
+        margin-left: 50px;
+        text-shadow:0px 0px 10px rgb(0, 181, 253); 
+        box-shadow:3px 3px 3px rgb(149, 183, 255);
+        border-radius: 5px;
+      
+        
+    }
+    
+    .partFooter a {
+       
+        font-size: 25px;
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 300;
+        transition: color .3s ease-in-out;
+       
+       
+    }
+  
+    .partFooter p{
+        font-size: 25px;
+    }
+    
+    .social-media i {
+        display: inline-block;
+        font-size: 25px;
+        display: inline-block;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        border-radius: 50%;
+        width: 38px;
+        height: 38px;
+        line-height: 36px;
+        cursor: pointer;
+        margin-top: 20px;
+        text-align: center;
+        transition: all ease-in-out .3s;
+        margin-right: 5px;
+    } 
+    .container-footer{
+        font-size: 25px;
+    }
+     
+}
+
+
